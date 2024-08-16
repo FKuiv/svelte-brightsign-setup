@@ -1,0 +1,14 @@
+{
+  "name": "svelte-brightsign-setup",
+  "version": "1.0.0",
+  "description": "Setup svelte project for Brightsign",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fred Kuiv",
+  "license": "ISC",
+  "bin": {
+    "svelte-brightsign": "./index.js"
+  }
+}
