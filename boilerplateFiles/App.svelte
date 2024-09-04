@@ -1,5 +1,6 @@
 <script lang="ts">
   import { onMount } from "svelte";
+  import { isSaver } from "./store";
 
   const INTERACTIVE_EVENTS = ["touchstart", "pointerdown", "pointerup"];
   const SCREENSAVER_TIMEOUT = 1000 * 60 * 5; // 5 minutes
@@ -7,9 +8,6 @@
 
   function screenSaver() {
     isSaver.set(true);
-    currentView.set(-1);
-    viewToBe.set(-1);
-    currentImage.set(1);
   }
 
   function resetScreenSaver() {
