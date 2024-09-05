@@ -20,6 +20,7 @@ const fileStructure = {
     "postcss.config.js",
     "tailwind.config.js",
     "webpack.config.js",
+    "tsconfig.json",
     ".gitignore",
   ],
 };
