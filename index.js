@@ -11,7 +11,7 @@ const fileStructure = {
     pages: [],
     static: [],
     locales: ["en.json", "et.json", "index.ts"],
-    ".": ["App.svelte", "enums.ts", "main.ts", "store.ts"],
+    ".": ["App.svelte", "enums.ts", "main.ts", "store.ts", "global.css"],
   },
   public: ["autorun.brs", "index.html"],
   ".": [
