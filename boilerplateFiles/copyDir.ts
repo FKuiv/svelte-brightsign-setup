@@ -17,5 +17,9 @@ exec(`cp -r ${source_directory} ${target_directory}`, (error, stdout) => {
     return;
   }
   console.log(`stdout: ${stdout}\n\n`);
-  fs.rmdirSync(`${target_directory}/fonts`, { recursive: true });
+  try {
+    fs.rmdirSync(`${target_directory}/fonts`, { recursive: true });
+  } catch (e) {
+    console.error("No fonts to delete");
+  }
 });
