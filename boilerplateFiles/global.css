@@ -1,3 +1,50 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  background: transparent;
+  height: min-content;
+}
+
+.hideScrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.bgImageUrl {
+  background-image: var(--bgImage);
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hideScrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+::-webkit-scrollbar-track {
+  /* Customize the scrollbar track */
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  /* Customize the scrollbar thumb */
+  background: transparent;
+}
