@@ -17,7 +17,7 @@ const fileStructure = {
   ".": [
     "package.json",
     "copyDir.ts",
-    "postcss.config.js",
+    "postcss.config.mjs",
     "tailwind.config.js",
     "webpack.config.js",
     "tsconfig.json",
